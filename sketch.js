@@ -41,7 +41,7 @@ function mousePressed () {
 function draw () {
   background(65);
   // Hit detection flags targets as destroyed
-
+image(backdrop1,0,0);
   // Player movement controls and player entity are handled in this section
   if (keyIsPressed) {
     if (key === 'ArrowLeft') {
