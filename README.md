@@ -18,5 +18,6 @@ Programming and artwork by Michael Hintermeister
   - Projectiles are functional, with prerendered sprites
   - Moving targets are decorated with prerendered sprites, and collision detection is fully functional
   - Game is overall well optimized, and projectiles deleting from their arrays as they exit the canvas.
+  
   **Abandoned:**
   - A timer was planned to stop when all viron particles were destroyed, and the game was finished, however due to the complications with projectile movement early on in the project, complications with collision detection near the end of the project, and finally implementation of sprite assets, the timer was ultimately abandoned due to time constraints.
