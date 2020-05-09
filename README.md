@@ -2,7 +2,7 @@
 Programming and artwork by Michael Hintermeister
 
 **Introduction:**
-  As my final project, I chose to make a space invaders style projectile shooter, using P5.JS. The game features MediBot, a nanobot sent into the patient's body to fight the coronavirus particles. The sprites for all assets were modeled and textured in Blender, and edited using Adobe Photoshop to appropriately fit onscreen. p5.collide was used to add functional collision detection to the game. It was fun to incorporate my experience in the 3d realm into this 2d project, much like how Donkey Kong SNES created sprites using rendered video of 3d models.
+  As my final project, I chose to make a space invaders style projectile shooter, using P5.JS. The game features MediBot, a nanobot sent into the patient's body to fight the coronavirus particles. The sprites for all assets were modeled and textured in Blender, and edited using Adobe Photoshop to appropriately fit onscreen. p5.collide was used to add functional collision detection to the game. It was fun to incorporate my experience in the 3d realm into this 2d project, much like how Donkey Kong Country for the SNES utilized sprite assets using prerendered video of 3d models.
   
   **Controls:**
   - Right Arrow = Move Right
