@@ -21,3 +21,4 @@ Programming and artwork by Michael Hintermeister
   
   **Abandoned:**
   - A timer was planned to stop when all viron particles were destroyed, and the game was finished, however due to the complications with projectile movement early on in the project, complications with collision detection near the end of the project, and finally implementation of sprite assets, the timer was ultimately abandoned due to time constraints.
+  - Initially I wanted to experiment with blendmodes and colormodes, however the goal was abandoned in favor of prerendered sprites, as a stylistic decision.
