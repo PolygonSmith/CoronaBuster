@@ -13,6 +13,7 @@ Programming and artwork by Michael Hintermeister
   Download the repository and run in browser using Web Server For Chrome.
   
   **Goals**
+
   **Accomplished:**
   - Player movement is smooth, with seamless wraparound
   - Projectiles are functional, with prerendered sprites
