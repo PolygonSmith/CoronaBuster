@@ -17,7 +17,10 @@ var hitCountC = 1;
 var hitCountD = 1;
 let projectilesX = [];
 let projectilesY = [];
-let bg;
+var i;
+
+
+//Sprite assets are preloaded for later use
 function preload () {
   syringe = loadImage('Syringe2.png');
   corona1 = loadImage('Viron2.png');
@@ -31,9 +34,8 @@ function preload () {
 function setup () {
   createCanvas(400, 700);
 }
-
+//  Shooting controls, which add new data to the projectile coordinate arrays through mouse events
 function mousePressed () {
-  // Shooting controls
   projectilesX.unshift(playerX);
   projectilesY.unshift(playerY);
 }
@@ -41,7 +43,7 @@ function mousePressed () {
 function draw () {
   background(65);
   // Hit detection flags targets as destroyed
-image(backdrop1,0,0);
+  image(backdrop1,0,0);
   // Player movement controls and player entity are handled in this section
   if (keyIsPressed) {
     if (key === 'ArrowLeft') {
@@ -58,8 +60,7 @@ image(backdrop1,0,0);
     playerX = width;
   }
 
-  // This for loop contains projectile spawning, movement, and hit detection
-  // tools from the collide2d library
+  // This for loop contains projectile spawning, movement, and hit detection tools from the collide2d library. Projectiles which leave the canvas are automatically deleted to save system resources.
 
   for (var i = 0; i < projectilesX.length; i++) {
     ellipse(projectilesX[i]+15, projectilesY[i],5,5);
@@ -92,7 +93,7 @@ image(backdrop1,0,0);
       hitCountD = hitCountD + 1;
     }
   }
-  // Moving targets
+  // Moving targets. Hitcount variables are used to track which targets have been destroyed
   if (hitCountA < 2) {
     ellipse(target1X, 50, 40, 40);
     image(corona1, target1X-40, 15);
